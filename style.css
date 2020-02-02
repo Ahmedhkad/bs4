@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.sidebar {
+  position: fixed;
+  left: 0px;
+  width: 250px;
+  height: 100%;
+  background: #bd5d38;
+  transition: all .5s ease;
+}
+.sidebar header {
+  padding-top: 5px
+  font-size: 22px;
+  color: white;
+  line-height: 55px;
+  text-align: center;
+  background: #bd5d38;
+  user-select: none;
+}
+.sidebar header img{
+max-width: 100%;
+  max-width: 10rem;
+    max-height: 12rem;
+    border: .5rem solid rgba(255,255,255,.2);
+    border-radius: 50%!important;
+margin-top: 10vh;
+}
+.sidebar ul a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 7vmax;
+  font-size: 20px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+
+  transition: .4s;
+}
+ul li:hover a{
+  padding-left: 50px;
+  color:black;
+}
+.sidebar ul a i{
+  margin-right: 16px;
+}
+.sidebar .social{
+  display: block;
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  transition: 0.6s;
+  line-height: 45px;
+  text-align: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.sidebar .social :hover {
+  color:black;
+  cursor: pointer;
+}
+#check{
+  display: none;
+}
+label #btn,label #cancel{
+  position: absolute;
+  background: #6b2910;
+  border-radius: 3px;
+  cursor: pointer;
+}
+label #btn{
+  left: 5px;
+  top: 5px;
+  font-size: 30px;
+  color: white;
+  padding: 6px 12px;
+  transition: all .5s;
+  opacity: 0;
+  pointer-events: none;
+}
+label #cancel{
+  z-index: 1111;
+  left: 200px;
+  top: 10px;
+  font-size: 30px;
+  color: white;
+  padding: 4px 9px;
+  transition: all .5s ease;
+}
+#check:checked ~ .sidebar{
+  left: -250px;
+}
+#check:checked ~ label #btn{
+  left: 5px;
+  opacity: 100;
+  pointer-events: visible;
+
+}
+#check:checked ~ label #cancel{
+  left: -195px;
+}
+#check:checked ~ section{
+  margin-left: 70px;
+}
+
+section{
+  margin-left: 255px;
+  background: url(bg.jpeg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  transition: all .5s;
+}

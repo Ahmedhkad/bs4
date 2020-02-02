@@ -1,0 +1,14 @@
+.main-page{
+height: 100%;
+padding: 20px;
+}
+
+.container{
+  padding-top:  5vh;
+  display: flex!important;
+}
+
+.cv-date{
+  width: 600px;
+  color:#b33a0c;
+}

@@ -1,14 +1,31 @@
+section{
+  margin-left: 250px;
+  transition: all .5s;
+  padding: 15px;
+
+}
+
 .main-page{
-height: 100%;
-padding: 20px;
+  padding-top: 10vh;
+  height: 100vh;
 }
 
 .container{
-  padding-top:  5vh;
-  display: flex!important;
+margin-top: 20px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.container p{
+
+
 }
 
 .cv-date{
-  width: 600px;
-  color:#b33a0c;
+margin-top: 20px;
+  white-space: nowrap;
+  color: #bd5d38;
+
 }
